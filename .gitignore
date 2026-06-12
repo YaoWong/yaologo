@@ -1,0 +1,120 @@
+# Repository workspace metadata
+.omo/
+.opencode/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Environment / local config
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temp / cache
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+*.tmp
+
+# Archives / packaged outputs
+*.7z
+*.bz2
+*.gz
+*.rar
+*.tar
+*.tgz
+*.zip
+
+# Generic build outputs
+build/
+dist/
+out/
+release/
+debug/
+coverage/
+.coverage
+htmlcov/
+
+# Node.js / frontend
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+vite.svg
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+
+# Go
+.coverprofile
+
+# Rust
+target/
+
+# Java / Kotlin / JVM
+.gradle/
+*.class
+
+# C / C++
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Infrastructure / misc
+.terraform/
+.serverless/
+.aws-sam/
+
+# Test artifacts
+playwright-report/
+test-results/
+*.lcov
