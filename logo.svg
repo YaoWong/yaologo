@@ -28,16 +28,6 @@
 
   <rect width="1024" height="1024" fill="#FFFFFF"/>
 
-  <!--
-    Y-junction convergence core - v6
-    Ring: center (512,512), r=250, stroke-width 34, dasharray 445.06 78.54, rotated -21deg
-    Core: stroke-based junction (sw=68, round linejoin + linecap)
-      + filled branch bodies (hw=18 lower / hw=20 upper) with 11px tips
-      + ray roots remain centered on the same three axes as the stroked junction
-      + slightly larger center lightening mask to keep the heavier core from clogging
-    Gradients: arc-shade (ring), y-shade (lighter at center)
-  -->
-
   <g mask="url(#center-soften)">
     <path d="M 512.00 590.00 L 512 512 L 577.82 474.00 M 577.82 474.00 L 512 512 L 446.18 474.00 M 446.18 474.00 L 512 512 L 512.00 590.00"
           stroke="url(#y-shade)"
