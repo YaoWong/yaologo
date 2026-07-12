@@ -1,7 +1,7 @@
 # AGENTS.md
 
 This branch is a focused workspace for designing Yao's personal logo.
-It now includes versioned logo draft folders from `logo_v1` to `logo_v5`.
+It now includes versioned logo draft folders from `logo_v1` to `logo_v6`.
 
 ## PRINCIPLES
 
@@ -12,7 +12,7 @@ It now includes versioned logo draft folders from `logo_v1` to `logo_v5`.
 ## REPOSITORY FACTS
 
 - Current working branch for this effort: `yaologo`.
-- Root contents include `AGENTS.md`, `README.md`, `LICENSE`, `.gitignore`, and `logo_v1/` through `logo_v5/`.
+- Root contents include `AGENTS.md`, `README.md`, `LICENSE`, `.gitignore`, and `logo_v1/` through `logo_v6/`.
 - Each `logo_v*` directory currently contains one draft SVG and one review HTML file.
 - `.omo/` and `.opencode/` are workspace metadata directories and are ignored.
 - The repository is MIT-licensed unless a future file states otherwise.
