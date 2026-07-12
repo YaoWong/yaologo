@@ -1,6 +1,6 @@
-# yao / yaologo
+# yaologo
 
-This branch contains Yao's personal logo drafts.
+This repository contains Yao's personal logo drafts.
 
 ## Current contents
 
@@ -15,7 +15,7 @@ Keep this README and `AGENTS.md` in sync with the actual draft versions in the r
 
 ## 中文
 
-这个分支现在保存的是 Yao 的个人 logo 草稿。
+这个仓库现在保存的是 Yao 的个人 logo 草稿。
 
 ### 当前内容
 
