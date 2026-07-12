@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="arc-shade" cx="512" cy="512" r="260"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#0e0e0e"/>
+      <stop offset="65%"  stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#2e2e2e"/>
+    </radialGradient>
+
+    <radialGradient id="y-shade" cx="512" cy="512" r="340"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#222222"/>
+      <stop offset="35%"  stop-color="#252525"/>
+      <stop offset="100%" stop-color="#2e2e2a"/>
+    </radialGradient>
+
+    <radialGradient id="center-fade" cx="512" cy="512" r="29"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="rgb(255,255,255)" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+    </radialGradient>
+
+    <mask id="center-soften">
+      <rect width="1024" height="1024" fill="white"/>
+      <circle cx="512" cy="512" r="29" fill="url(#center-fade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#FFFFFF"/>
+
+  <!--
+    Y-junction convergence core — v2.2 micro-polish
+    Ring: center (512,512), r=250, stroke-width 19, dasharray 445.06 78.54, rotated -21deg
+    Core: stroke-based junction (sw=60, round linejoin + linecap, d=70)
+      + filled branch bodies (hw=21 lower / hw=24 upper) with linear taper to 7px tips
+      + lower branch shoulder d=70 (vs 55 upper) for smoother center transition
+      + soft center lightening mask (45% opacity at center, r=29)
+    Gradients: arc-shade (ring), y-shade (lighter at center)
+  -->
+
+  <g mask="url(#center-soften)">
+    <!-- Center junction: three lines through center with round linejoin -->
+    <path d="M 512.00 582.00 L 512 512 L 572.62 477.00 M 572.62 477.00 L 512 512 L 451.38 477.00 M 451.38 477.00 L 512 512 L 512.00 582.00"
+          stroke="url(#y-shade)"
+          stroke-width="60"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+
+    <!-- Branch bodies: from d_core outward with linear taper -->
+    <path d="M 533.00 582.00 C 527.22 671.10 521.27 762.90 515.50 852.00 A 3.5 3.5 0 0 1 508.50 852.00 C 496.77 671.10 502.72 762.90 491.00 582.00 Z" fill="url(#y-shade)"/>
+    <path d="M 547.63 463.72 C 632.46 422.55 719.87 380.14 804.70 338.97 A 3.5 3.5 0 0 1 808.20 345.03 C 649.70 452.40 730.13 397.91 571.63 505.28 Z" fill="url(#y-shade)"/>
+    <path d="M 452.37 505.28 C 374.30 452.40 293.87 397.91 215.80 345.03 A 3.5 3.5 0 0 1 219.30 338.97 C 391.54 422.55 304.13 380.14 476.37 463.72 Z" fill="url(#y-shade)"/>
+  </g>
+
+  <!-- Outer ring (unchanged from v1) -->
+  <circle
+    cx="512"
+    cy="512"
+    r="250"
+    fill="none"
+    stroke="url(#arc-shade)"
+    stroke-width="19"
+    stroke-linecap="round"
+    stroke-dasharray="445.06 78.54"
+    transform="rotate(-21 512 512)"
+  />
+</svg>
