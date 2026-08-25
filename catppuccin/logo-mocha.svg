@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="arc-shade" cx="512" cy="512" r="260"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b4befe"/>
+      <stop offset="65%" stop-color="#cba6f7"/>
+      <stop offset="100%" stop-color="#cba6f7"/>
+    </radialGradient>
+
+    <radialGradient id="y-shade" cx="512" cy="512" r="340"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cba6f7"/>
+      <stop offset="40%" stop-color="#c4aef9"/>
+      <stop offset="100%" stop-color="#b4befe"/>
+    </radialGradient>
+
+    <radialGradient id="center-fade" cx="512" cy="512" r="35"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+    </radialGradient>
+
+    <mask id="center-soften">
+      <rect width="1024" height="1024" fill="white"/>
+      <circle cx="512" cy="512" r="35" fill="url(#center-fade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#1e1e2e"/>
+
+  <g mask="url(#center-soften)">
+    <path d="M 512.00 590.00 L 512 512 L 577.82 474.00 M 577.82 474.00 L 512 512 L 446.18 474.00 M 446.18 474.00 L 512 512 L 512.00 590.00"
+          stroke="url(#y-shade)"
+          stroke-width="68"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+
+    <path d="M 530.00 590.00 C 525.50 677.33 521.00 764.67 516.50 852.00 A 5.5 5.5 0 0 1 505.50 852.00 C 501.00 764.67 496.50 677.33 492.00 590.00 Z" fill="url(#y-shade)"/>
+    <path d="M 567.82 456.68 C 646.45 416.87 725.08 377.05 803.70 337.24 A 5.5 5.5 0 0 1 809.20 346.76 C 735.41 394.95 661.61 443.13 587.82 491.32 Z" fill="url(#y-shade)"/>
+    <path d="M 436.18 491.32 C 362.39 443.13 288.59 394.95 214.80 346.76 A 5.5 5.5 0 0 1 220.30 337.24 C 298.92 377.05 377.55 416.87 456.18 456.68 Z" fill="url(#y-shade)"/>
+  </g>
+
+  <circle
+    cx="512"
+    cy="512"
+    r="250"
+    fill="none"
+    stroke="url(#arc-shade)"
+    stroke-width="34"
+    stroke-linecap="round"
+    stroke-dasharray="445.06 78.54"
+    transform="rotate(-21 512 512)"
+  />
+</svg>
